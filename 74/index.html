@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>睡眠管理記録</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+    </head>
+    <body>
+        <div id="inputPage">
+            <h1>睡眠管理記録</h1>
+            <h2>睡眠情報の入力</h2>
+            <div>
+                <label for="date">日付：</label>
+                <input type="date" id="date">
+            </div>
+            <div>
+                <label for="sleepTime">就寝時刻：</label>
+                <input type="time" id="sleepTime">
+            </div>
+            <div>
+                <label for="wakeTime">起床時刻：</label>
+                <input type="time" id="wakeTime">
+            </div>
+            <div>
+                <label for="mood">起床時の気分：</label>
+                <select id="mood">
+                    <option value="">選択してください</option>
+                    <option value="スッキリ">スッキリ</option>
+                    <option value="普通">普通</option>
+                    <option value="眠い">眠い</option>
+                    <option value="最悪">最悪</option>
+                </select>
+            </div>
+            <div>
+                <label for="quality">睡眠の質：</label>
+                <select id="quality">
+                    <option value="">選択してください</option>
+                    <option value="良い">良い</option>
+                    <option value="普通">普通</option>
+                    <option value="悪い">悪い</option>
+                </select>
+            </div>
+            <div>
+                <label>アラーム：</label>
+                <input type="radio" id="alarmOn" name="alarm" value="使用">
+                <label for="alarmOn">使用</label>
+                <input type="radio" id="alarmOff" name="alarm" value="未使用">
+                <label for="alarmOff">未使用</label><br>
+                <label for="alarmTime">アラームの設定時刻：</label>
+                <input type="time" id="alarmTime">
+            </div>
+            <div>
+                <label>昼寝：</label>
+                <input type="radio" id="napYes" name="nap" value="した">
+                <label for="napYes">した</label>
+                <input type="radio" id="napNo" name="nap" value="していない">
+                <label for="napNo">していない</label>
+            </div>
+            <div>
+                <label for="memo">メモ：</label><br>
+                <textarea id="memo" rows="3"></textarea>
+            </div>
+            <div>
+                <button type="button" id="addButton" disabled>追加する</button>
+            </div>
+            <div>
+                <p>
+                    <a href="list.html">記録一覧を見る</a>
+                </p>
+            </div>
+            <small>2501546　髙手煌壱</small>
+        </div>
+    </body>
+</html>
